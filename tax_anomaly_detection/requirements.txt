@@ -1,1 +1,26 @@
+# Core Framework
+fastapi==0.95.1
+uvicorn[standard]==0.22.0
+
+# Encryption
+pycryptodome==3.18.0
+
+# Data Handling
+pandas==1.5.3
+numpy==1.24.3
+
+# Machine Learning
+scikit-learn==1.2.2
+
+# CORS Handling
+python-multipart==0.0.6
+
+# Optional: For Blockchain-like Audit Logs
+# (No additional packages required if using built-in modules)
+
+# Optional: For Logging and Monitoring
+loguru==0.7.0
+
+# Optional: If using Pydantic for data validation
+pydantic==1.10.7
 
