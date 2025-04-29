@@ -1,11 +1,12 @@
-# app/main.py
-
 from fastapi import FastAPI
+from . import routes
 
-# Create the FastAPI app instance
 app = FastAPI()
 
-# Define a simple route for testing
+# Include the router for user registration
+app.include_router(routes.router)
+
+
 @app.get("/")
-def read_root():
-    return {"message": "Hello, World!"}
+def root():
+    return {"message": "Welcome to Taxation API"}
